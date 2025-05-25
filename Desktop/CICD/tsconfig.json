@@ -1,10 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "CommonJS",
-    "rootDir": "src",
     "outDir": "dist",
-    "strict": true,
-    "esModuleInterop": true
-  }
+    "rootDir": ".",          ← tell TypeScript that source files can live *anywhere*
+    "module": "commonjs",
+    "target": "es6",
+    "esModuleInterop": true,
+    "strict": true
+  },
+  "include": [
+    "src/**/*",
+    "tests/**/*"             ← explicitly include tests folder too
+  ]
 }
+

@@ -45,4 +45,3 @@ jobs:
           script: |
             cd ${{ secrets.EC2_PATH }}
             pm2 reload app || pm2 start dist/index.js --name app
-#  work on this later
